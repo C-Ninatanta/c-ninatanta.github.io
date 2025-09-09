@@ -42,31 +42,28 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Keep theme toggle fixed at top-right */
-#theme-toggle {
-  position: fixed;
+/* Pin the theme toggle to the top-right of the screen */
+a[title="toggle theme"] {
+  position: fixed !important;  /* escape the navbar layout */
   top: 1rem;
   right: 1rem;
-  z-index: 9999;   // stays above nav
-  padding: 0.4rem 0.6rem;
+  z-index: 10000;              /* above the header */
+  padding: .35rem .55rem;
   border-radius: 9999px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0,0,0,.05);
+  border: 1px solid rgba(0,0,0,.1);
   backdrop-filter: blur(6px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
-/* Adjust spacing on very small screens */
+/* Small-screen tweak so it doesn't collide with the hamburger */
 @media (max-width: 480px) {
-  #theme-toggle {
-    top: 0.6rem;
-    right: 0.6rem;
-  }
+  a[title="toggle theme"] { top: .6rem; right: .6rem; }
 }
 
-/* Hide toggle when printing */
-@media print {
-  #theme-toggle {
-    display: none;
-  }
+/* Optional: remove leftover nav spacing the link used to occupy */
+.site-nav a[title="toggle theme"] {
+  margin-left: 0 !important;
 }
+
+/* Optional: hide in print */
+@media print { a[title="toggle theme"] { display: none; } }

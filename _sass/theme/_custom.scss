@@ -37,3 +37,25 @@
 
 /* Optional: slightly tighter icon spacing (match your screenshots) */
 .icon-pad-right { margin-right: 0.5em; }
+
+/* Stable icon+label alignment */
+.author__urls.social-icons li { display: flex; align-items: center; line-height: 1.3; }
+.author__urls.social-icons li i { flex: 0 0 1.25em; text-align: center; }
+.author__urls.social-icons li a { flex: 1 1 auto; min-width: 0; word-break: break-word; hyphens: auto; }
+.icon-pad-right { margin-right: 0.5em; }
+
+/* Sidebar width: consistent across zoom; wider on large screens */
+.page__sidebar { flex: 0 0 260px; max-width: 260px; }
+@media (max-width: 900px) { .page__sidebar { flex-basis: 240px; max-width: 240px; } }
+@media (min-width: 1280px) { .page__sidebar { flex-basis: 280px; max-width: 280px; } }
+
+/* Breathing room below name/bio */
+.author__content { margin-bottom: 0.75rem; }
+.author__urls-wrapper { margin-top: 0.25rem; }
+
+/* WSU label toggle: long on desktop, short on small widths */
+.affil-label-short { display: none; }
+@media (max-width: 900px) {
+  .affil-label-long { display: none; }
+  .affil-label-short { display: inline; }
+}

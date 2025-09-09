@@ -27,8 +27,14 @@
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
+
+      <!-- Added these lines -->
       {% if author.employer and author.employer_url %}
-        <li><a href="{{ author.employer_url }}"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</a></li>
+        <li class="author__desktop">
+          <a href="{{ author.employer_url }}">
+            <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}
+          </a>
+        </li>
       {% endif %}
       {% if author.lab_url %}
         <li><a href="{{ author.lab_url }}"><i class="fas fa-fw fa-flask icon-pad-right" aria-hidden="true"></i>MIAR Labs</a></li>

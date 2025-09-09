@@ -42,3 +42,31 @@
     "vendor/font-awesome/brands"
 ;
 
+/* Keep theme toggle fixed at top-right */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;   // stays above nav
+  padding: 0.4rem 0.6rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Adjust spacing on very small screens */
+@media (max-width: 480px) {
+  #theme-toggle {
+    top: 0.6rem;
+    right: 0.6rem;
+  }
+}
+
+/* Hide toggle when printing */
+@media print {
+  #theme-toggle {
+    display: none;
+  }
+}

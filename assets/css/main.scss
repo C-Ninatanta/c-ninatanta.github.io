@@ -41,3 +41,16 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Make each sidebar list item a container so it can respond to available width/zoom */
+.author__urls li { container-type: inline-size; }
+
+/* Default: show full text, hide abbreviation */
+.inst.full { display: inline; }
+.inst.abbr { display: none; }
+
+/* When the item gets tight (small screen or higher zoom), swap to WSU */
+@container (max-width: 220px) {
+  .inst.full { display: none; }
+  .inst.abbr { display: inline; }
+}

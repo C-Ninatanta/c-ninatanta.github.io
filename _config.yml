@@ -47,13 +47,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/C-Ninatanta"
+  github           : "C-Ninatanta"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "https://bsky.app/profile/c-ninatanta.bsky.social" # Replace this with your Bluesky username
+  bluesky          : "c-ninatanta.bsky.social" # Replace this with your Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -62,7 +62,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/chris-ninatanta-70a606365/"
+  linkedin         : "chris-ninatanta-70a606365"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -75,7 +75,7 @@ author:
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : "https://www.youtube.com/@MIARChrisNinatanta"
+  youtube          : "@MIARChrisNinatanta"
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings

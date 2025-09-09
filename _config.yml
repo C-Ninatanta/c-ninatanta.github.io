@@ -77,15 +77,13 @@ author:
   xing             : # Username
   youtube          : "MIARChrisNinatanta"
   zhihu            : # Username
-
-  links:
+links:
     - label: "Washington State University"
       icon: "fas fa-university"
       url: "https://wsu.edu"
     - label: "MIAR Lab"
       icon: "fas fa-flask"
       url: "https://labs.wsu.edu/miar/"
-
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:

@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Studying Mechanical Engineering at Washington State University"
   location         : "Pullman, WA"
-  employer         : '<span class="inst full">Washington State University</span><abbr class="inst abbr" title="Washington State University">WSU</abbr>'
+  employer         : "Washington State University"
   employer_url     : "https://wsu.edu"
   uri              : # URL
   email            : "C.Ninatanta@wsu.edu" 

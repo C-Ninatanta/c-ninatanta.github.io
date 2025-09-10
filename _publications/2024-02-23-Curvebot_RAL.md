@@ -11,4 +11,5 @@ bibtexurl: 'http://c-ninatanta.github.io/files/Curvebot_RAL_Bibtex.bib'
 citation: '1.	J. Allen, R. Dorosh, <b>C. Ninatanta </b>, A. Allen, L. Shui, K. Yoshida, J. Luo, M. Luo, "Modeling and Experimental Verification of a Continuous Curvature-Based Soft Growing Manipulator," in IEEE Robotics and Automation Letters, vol. 9, no. 4, pp. 3594-3600, April 2024'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+<!--The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+-->

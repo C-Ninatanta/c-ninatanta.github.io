@@ -8,7 +8,7 @@ excerpt: 'This paper is on the design and evaluation of a soft gripper for apple
 date: 2024-4-14
 venue: '2024 IEEE 7th International Conference on Soft Robotics (RoboSoft)'
 slidesurl: 'http://c-ninatanta.github.io/files/RoboSoft24_Design_and_Evaluation_of_a_Soft_Electrical_Apple_Harvesting_Gripper.pdf'
-paperurl: 'http://c-ninatanta.github.io/files/Design_and_Evaluation_of_a_Lightweight_Soft_Electrical_Apple_Harvesting_Gripper.pdf'
+paperurl: 'http://c-ninatanta.github.io/files/Design_of_a_Lightweight_Soft_Electrical_Apple_Harvesting_Gripper.pdf'
 bibtexurl: 'http://c-ninatanta.github.io/files/Gripper_RoboSoft_Bibtex.bib'
 citation: 'C. Ninatanta et al., "Design and Evaluation of a Lightweight Soft Electrical Apple Harvesting Gripper," 2024 IEEE 7th International Conference on Soft Robotics (RoboSoft), San Diego, CA, USA, 2024, pp. 479-484, doi: 10.1109/RoboSoft60065.2024.10521995.'
 ---

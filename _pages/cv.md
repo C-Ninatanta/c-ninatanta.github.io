@@ -11,11 +11,11 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Mechanical Engineering, Washington State University, 2029 (expected)
+* B.S. in Mechanical Engineering, Washington State University, 2023
+* A.A. Yakima Valley College, 2019 
 
-Work experience
+Research Experience
 ======
 * Spring 2024: Academic Pages Collaborator
   * GitHub University
@@ -27,10 +27,10 @@ Work experience
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
-  * GitHub University
+* Fall 2022: Undergraduate Research Assistant
+  * Washington State University
   * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Supervisor: Dr. Nestor Perez Arancibia
   
 Skills
 ======

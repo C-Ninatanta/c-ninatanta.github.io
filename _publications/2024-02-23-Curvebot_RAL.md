@@ -7,6 +7,7 @@ excerpt: 'This paper is about investigating a potential solution to address the 
 date: 2024-02-23
 venue: 'IEEE Robotics and Automation Letters'
 paperurl: 'http://academicpages.github.io/files/Modeling_and_Control_of_a_Continuous_Curvature_based_Soft_Growing_Manipulator.pdf'
+bibtexurl: 'http://c-ninatanta.github.io/files/Curvebot_RAL_Bibtex.bib'
 citation: '1.	J. Allen, R. Dorosh, <b>C. Ninatanta </b>, A. Allen, L. Shui, K. Yoshida, J. Luo, M. Luo, "Modeling and Experimental Verification of a Continuous Curvature-Based Soft Growing Manipulator," in IEEE Robotics and Automation Letters, vol. 9, no. 4, pp. 3594-3600, April 2024'
 ---
 

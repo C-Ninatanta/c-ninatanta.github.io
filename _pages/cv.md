@@ -17,29 +17,43 @@ Education
 
 Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
+* Spring 2023: Graduate Research Assistant
+  * Washington State University
+  * Duties include: Performing literature search from prior publications, writing research reports, preparing and submitting manuscripts, building robots, testing research equipment and tools.
   * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
 
 * Fall 2022: Undergraduate Research Assistant
   * Washington State University
-  * Duties included: Tagging issues
+  * Duties included: Designing and evaluating a lightweight soft gripper for apple harvesting and assisting in various experiments with graduate students.
+  * Supervisor: Professor Hub
+
+* Fall 2021: Undergraduate Research Assistant
+  * Washington State University
+  * Duties included: Design and assembly of a temperature-controlled enclosure. Was trained on a laser to cut carbon fiber sheets.
   * Supervisor: Dr. Nestor Perez Arancibia
   
-Skills
+Technical Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* <b>Programming & Software:</b> Python (advanced), C# (beginner), C++ (beginner), Arduino (intermediate), MATLAB (intermediate), ROS (beginner), OpenCV (beginner), TensorFlow (beginner)
+  *  
+* <b>Robotics and Control:</b> Forward/Inverse Kinematics, SLAM, Path Planning, PID control
+* <b>Mechanical Design:</b> CAD (Solidworks, Autodesk Inventor, OnShape), Component Design, Protoyping (3D printing, Machining) 
+* <b>Electronics & Embedded Systems:</b> Arduino, PCB Design, Sensors, Actuators, Real-Time Systems
+* <b>Simulation & Modeling:</b> Gazebo, Simulink
+* <b>Fabrication & Testing:</b> Rapid Prototyping, Soldering, Calibration, Experimental Validation
+
+<b>Specialized Areas</b>
+* Computer Vision
+* Machine Learning
+* Human-Robot Interaction
+* Soft Robotics
+* Systems Integration (I2C, SPI, UART)
+* IoT
+  
+Professional Skills
+======
+* Technical Writing & Research Publications
+* Interdisciplinary Team Collaboration
 
 Publications
 ======

@@ -34,8 +34,15 @@ Research Experience
   
 Technical Skills
 ======
-* <b>Programming & Software:</b> Python (advanced), C# (beginner), C++ (beginner), Arduino (intermediate), MATLAB (intermediate), ROS (beginner), OpenCV (beginner), TensorFlow (beginner)
-  *  
+* <b>Programming & Software:</b>
+  * Python (advanced)
+  * C# (beginner)
+  * C++ (beginner)
+  * Arduino (intermediate)
+  * MATLAB (intermediate)
+  * ROS (beginner)
+  * OpenCV (beginner),
+  * TensorFlow (beginner) 
 * <b>Robotics and Control:</b> Forward/Inverse Kinematics, SLAM, Path Planning, PID control
 * <b>Mechanical Design:</b> CAD (Solidworks, Autodesk Inventor, OnShape), Component Design, Protoyping (3D printing, Machining) 
 * <b>Electronics & Embedded Systems:</b> Arduino, PCB Design, Sensors, Actuators, Real-Time Systems

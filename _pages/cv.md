@@ -43,11 +43,29 @@ Technical Skills
   * ROS (beginner)
   * OpenCV (beginner),
   * TensorFlow (beginner) 
-* <b>Robotics and Control:</b> Forward/Inverse Kinematics, SLAM, Path Planning, PID control
-* <b>Mechanical Design:</b> CAD (Solidworks, Autodesk Inventor, OnShape), Component Design, Protoyping (3D printing, Machining) 
-* <b>Electronics & Embedded Systems:</b> Arduino, PCB Design, Sensors, Actuators, Real-Time Systems
-* <b>Simulation & Modeling:</b> Gazebo, Simulink
-* <b>Fabrication & Testing:</b> Rapid Prototyping, Soldering, Calibration, Experimental Validation
+* <b>Robotics and Control:</b>
+  * Forward/Inverse Kinematics
+  * SLAM
+  * Path Planning
+  * PID control
+* <b>Mechanical Design:</b>
+  * CAD (Solidworks, Autodesk Inventor, OnShape) (advanced)
+  * Component Design (advanced)
+  * Protoyping (3D printing, Machining) (advanced) 
+* <b>Electronics & Embedded Systems:</b>
+  * Arduino (intermediate)
+  * PCB Design (beginner)
+  * Sensors
+  * Actuators
+  * Real-Time Systems
+* <b>Simulation & Modeling:</b>
+  * Gazebo
+  * Simulink
+* <b>Fabrication & Testing:</b>
+  * Rapid Prototyping
+  * Soldering
+  * Calibration
+  * Experimental Validation
 
 <b>Specialized Areas</b>
 * Computer Vision

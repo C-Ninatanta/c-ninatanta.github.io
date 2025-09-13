@@ -3,7 +3,7 @@ title: "Enhancing Orchard Robotics Through Human-Teleoperated Systems with Hapti
 collection: talks
 type: "Oral Presentation"
 permalink: /talks/2025-05-03-NRT-Symposium
-venue: "Washington State University"
+venue: "NSF-NRT LEAD Research Symposium, Washington State University"
 date: 2025-05-03
 location: "Puillman, WA, USA"
 ---

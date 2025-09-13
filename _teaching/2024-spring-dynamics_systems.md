@@ -9,7 +9,6 @@ location: "Pullman, U.S.A."
 ---
 
 <i>Taught face-to-face <i/> <br>
-
 Organized class lectures, proctored exams, and designed assignments.
 
 <!--Heading 1

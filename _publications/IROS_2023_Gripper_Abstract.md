@@ -9,6 +9,8 @@ date: 2023-03-10
 venue: '2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2023)'
 slidesurl: 'https://docs.google.com/presentation/d/1kpUlAURK4gR9GbPJuPQaWWnPOTSkASSe/edit?usp=sharing&ouid=103583382193953600474&rtpof=true&sd=true'
 paperurl: 'http://c-ninatanta.github.io/files/Silicone_Soft_Gripper_IROS 2023_Chris.pdf'
+bibtexurl: 'http://c-ninatanta.github.io/files/IROS_apple_gripper_design.bib'
+citation: <b>C. Ninatanta</b>, J. Pilgrim, R. Dorosh, and M. Luo, “Design of a lightweight soft electrical apple harvesting gripper,” in Proc. IEEE/RSJ Int. Conf. Intell. Robots Syst. (IROS), 2023.
 ---
 <!--The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
 

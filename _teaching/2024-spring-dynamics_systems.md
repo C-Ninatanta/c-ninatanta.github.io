@@ -8,7 +8,7 @@ date: 2024-03-05
 location: "Pullman, U.S.A."
 ---
 
-<i>Taught face-to-face </>
+<i>Taught face-to-face <i/>
 Organized class lectures, proctored exams, and designed assignments.
 
 <!--Heading 1

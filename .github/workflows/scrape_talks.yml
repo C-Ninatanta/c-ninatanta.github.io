@@ -39,4 +39,5 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }} HEAD:masterthub.repository }} HEAD:master
+        git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }} HEAD:master
+        

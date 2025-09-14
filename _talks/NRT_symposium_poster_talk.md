@@ -2,7 +2,7 @@
 title: "Feeling the Future: User Reactions to Haptic Devices"
 collection: talks
 type: "Poster Presentation"
-permalink: /talks/2025-05-03-NRT_symposium_poster_talk.md
+permalink: /talks/2025-05-03-NRT_symposium_poster_talk
 venue: "NSF-NRT LEAD Research Symposium, Washington State University"
 date: 2025-05-03
 location: "Pullman, WA"

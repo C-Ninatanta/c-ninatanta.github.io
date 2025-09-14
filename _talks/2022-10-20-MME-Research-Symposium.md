@@ -2,7 +2,7 @@
 title: "Low-cost Reliable Soft Arm for Automated Tree Fruit Harvesting"
 collection: talks
 type: "Poster Presentation"
-permalink: /talks/2022-10-20-MME-Research-Symposium.md
+permalink: /talks/2022-10-20-MME-Research-Symposium
 venue: "MME Research Symposium, Washington State University"
 date: 2022-10-20
 location: "Pullman, WA"

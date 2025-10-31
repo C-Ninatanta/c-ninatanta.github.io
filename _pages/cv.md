@@ -17,7 +17,7 @@ Education
 
 Research Experience
 ======
-* Spring 2023: Graduate Research Assistant
+* Spring 2023: Undergraduate Research Assistant
   * Washington State University
   * Duties include: Performing literature search from prior publications, writing research reports, preparing and submitting manuscripts, building robots, testing research equipment, and tools.
   * Supervisor: Dr. Ming Luo

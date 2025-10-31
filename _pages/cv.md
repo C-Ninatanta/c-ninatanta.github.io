@@ -19,18 +19,18 @@ Research Experience
 ======
 * Spring 2023: Graduate Research Assistant
   * Washington State University
-  * Duties include: Performing literature search from prior publications, writing research reports, preparing and submitting manuscripts, building robots, testing research equipment and tools.
-  * Supervisor: The Users
+  * Duties include: Performing literature search from prior publications, writing research reports, preparing and submitting manuscripts, building robots, testing research equipment, and tools.
+  * Supervisor: Dr. Ming Luo
 
 * Fall 2022: Undergraduate Research Assistant
   * Washington State University
   * Duties included: Designing and evaluating a lightweight soft gripper for apple harvesting and assisting in various experiments with graduate students.
-  * Supervisor: Professor Hub
+  * Supervisor: Dr. Ming Luo
 
 * Fall 2021: Undergraduate Research Assistant
   * Washington State University
   * Duties included: Design and assembly of a temperature-controlled enclosure. Was trained on a laser to cut carbon fiber sheets.
-  * Supervisor: Dr. Nestor Perez Arancibia
+  * Supervisor: Dr. Néstor O. Pérez-Arancibia
   
 Technical Skills
 ======
@@ -98,6 +98,6 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+<!--Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

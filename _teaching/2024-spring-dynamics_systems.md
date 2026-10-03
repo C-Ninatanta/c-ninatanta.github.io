@@ -1,5 +1,5 @@
 ---
-title: "Dynamics Systems Lecturer"
+title: "Dynamics Systems Guest Lecturer"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2024-spring-dynamics_systems

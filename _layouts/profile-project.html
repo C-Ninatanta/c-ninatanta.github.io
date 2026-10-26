@@ -1,0 +1,152 @@
+---
+layout: profile-base
+---
+{% assign project = site.data.research | where: 'id', page.project_id | first %}
+<main class="pf-case-study">
+  <section class="pf-detail-hero" aria-labelledby="pf-case-title">
+    <div class="pf-container pf-detail-copy">
+      <p class="pf-kicker pf-kicker--red">Project {{ project.number }} / {{ project.label }}{% if project.flagship %} · Flagship research{% endif %}</p>
+      <h1 id="pf-case-title">{{ project.title }}</h1>
+      <p class="pf-case-lede">{{ project.summary }}</p>
+      <div class="pf-case-status"><span aria-hidden="true"></span>{{ project.work_stage }}</div>
+      <a class="pf-more pf-back-link" href="{{ '/projects/' | relative_url }}">← All research projects</a>
+    </div>
+    <div class="pf-detail-image">
+      {% if project.image %}
+      <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}" fetchpriority="high">
+      {% else %}
+      <div class="pf-project-image-placeholder pf-project-image-placeholder--large"><span>Human–robot interaction</span><strong>Haptic feedback</strong><small>Prototype photography to be added</small></div>
+      {% endif %}
+    </div>
+  </section>
+  {% if project.flagship %}
+  <section id="contribution" class="pf-container pf-role-highlight" aria-labelledby="pf-role-heading">
+    <div class="pf-role-intro">
+      <p class="pf-section-eyebrow">My work / flagship project</p>
+      <h2 id="pf-role-heading">My Engineering Contributions</h2>
+      <p>A brief view of the research and engineering activities associated with my work on this project.</p>
+    </div>
+    <div class="pf-role-details">
+      <ul class="pf-role-list">{% for item in project.contributions %}<li>{{ item }}</li>{% endfor %}</ul>
+      <p class="pf-role-disclosure">Contribution descriptions are drafts to confirm before publication.</p>
+    </div>
+  </section>
+  {% endif %}
+  {% if project.flagship or project.video.youtube_id != empty or project.video.mp4 != empty %}
+  <section class="pf-container pf-video-showcase" aria-label="Project demonstration video">
+    <div class="pf-video-copy">
+      <span class="pf-section-eyebrow">{% if project.flagship %}30–90 second video highlight{% else %}Project film / demonstration{% endif %}</span>
+      <h2>{% if project.flagship %}{% if project.id == 'apple-gripper' %}See how the gripper works{% elsif project.id == 'haptic-systems' %}Explore the wearable device{% else %}Watch the system in action{% endif %}{% else %}See the research in motion{% endif %}</h2>
+      <p>{% if project.video.description %}{{ project.video.description }}{% else %}A focused demonstration of the actual hardware and its behavior.{% endif %}</p>
+      {% if project.flagship %}<div class="pf-video-meta" aria-label="Planned video format"><span>{{ project.video.target_duration }}</span><span>{{ project.video.format }}</span></div>{% endif %}
+    </div>
+    {% if project.video.youtube_id != empty and project.video.youtube_id != nil %}
+      <div class="pf-video-frame"><iframe title="{{ project.video.title | escape }}" src="https://www.youtube-nocookie.com/embed/{{ project.video.youtube_id | escape }}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    {% elsif project.video.mp4 != empty and project.video.mp4 != nil %}
+      <div class="pf-video-frame"><video controls playsinline preload="metadata" {% if project.video.poster != empty %}poster="{{ project.video.poster | relative_url }}"{% endif %}><source src="{{ project.video.mp4 | relative_url }}" type="video/mp4">Your browser does not support HTML5 video.</video></div>
+    {% else %}
+      <div class="pf-video-awaiting">
+        <svg class="pf-icon" aria-hidden="true"><use href="#i-play"/></svg>
+        <div><strong>{% if project.flagship %}Video highlight in preparation{% else %}Demonstration video in preparation{% endif %}</strong><span>Actual demonstration footage will appear here when available.</span>
+          {% if project.video.planned_labels %}<div class="pf-video-labels" aria-label="Proposed on-screen video labels">{% for label in project.video.planned_labels %}<span>{{ label }}</span>{% endfor %}</div>{% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </section>
+  {% endif %}
+  <div class="pf-container pf-case-navigation" aria-label="Project page sections">
+    {% if project.flagship %}<a href="#contribution">My contributions</a>{% endif %}<a href="#challenge">Challenge</a><a href="#approach">Approach</a>{% unless project.flagship %}<a href="#contribution">My contributions</a>{% endunless %}<a href="#validation">Validation</a><a href="#outcomes">Outcomes</a><a href="#media">Media gallery</a>
+  </div>
+  <div class="pf-container pf-case-layout">
+    <article class="pf-case-article">
+      <section id="challenge" class="pf-case-section">
+        <p class="pf-section-eyebrow">{% if project.flagship %}02{% else %}01{% endif %} / The problem</p>
+        <h2>Why this matters</h2>
+        <p>{{ project.challenge }}</p>
+      </section>
+      <section id="approach" class="pf-case-section">
+        <p class="pf-section-eyebrow">{% if project.flagship %}03{% else %}02{% endif %} / Engineering approach</p>
+        <h2>Design &amp; methods</h2>
+        <ul class="pf-case-list">{% for step in project.approach %}<li>{{ step }}</li>{% endfor %}</ul>
+      </section>
+      {% unless project.flagship %}
+      <section id="contribution" class="pf-case-section">
+        <p class="pf-section-eyebrow">03 / My contributions</p>
+        <h2>My role in the work</h2>
+        <ul class="pf-case-list pf-contributions">{% for item in project.contributions %}<li>{{ item }}</li>{% endfor %}</ul>
+      </section>
+      {% endunless %}
+      <section id="validation" class="pf-case-section">
+        <p class="pf-section-eyebrow">04 / Evaluation</p>
+        <h2>Testing &amp; validation</h2>
+        <ul class="pf-case-list">{% for item in project.validation %}<li>{{ item }}</li>{% endfor %}</ul>
+      </section>
+      <section id="outcomes" class="pf-case-section">
+        <p class="pf-section-eyebrow">05 / Findings</p>
+        <h2>Results &amp; takeaways</h2>
+        {% if project.results.size > 0 %}
+          <div class="pf-case-results">{% for result in project.results %}
+            <div class="pf-case-result"><strong>{{ result.value }}</strong><span>{{ result.label }}</span><small>{{ result.detail }}</small></div>
+          {% endfor %}</div>
+        {% else %}
+          <div class="pf-case-pending"><strong>Evaluation details forthcoming</strong><p>No numerical performance results are published on this project page yet.</p></div>
+        {% endif %}
+        <p class="pf-case-source">{{ project.source_note }}</p>
+        <h3>Research significance</h3>
+        <p>{{ project.impact }}</p>
+      </section>
+      <section id="media" class="pf-case-section pf-media-note">
+        <p class="pf-section-eyebrow">06 / Photo gallery</p>
+        <h2>Hardware, experiments &amp; results</h2>
+        {% if project.gallery.size > 0 %}
+        <div class="pf-gallery" aria-label="Research photographs and figures">
+          {% for media in project.gallery %}
+          <a class="pf-gallery-card" href="{{ media.src | relative_url }}" data-gallery-caption="{{ media.caption | escape }}" aria-label="Enlarge: {{ media.label | escape }}">
+            <div class="pf-gallery-thumbnail"><img src="{{ media.src | relative_url }}" alt="{{ media.alt | escape }}" loading="lazy"></div>
+            <div class="pf-gallery-caption"><span>{{ media.category }}</span><strong>{{ media.label }}</strong></div>
+          </a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="pf-gallery-awaiting"><p>Real project photos will be added here</p><div class="pf-gallery-pipeline"><span>01 / Hardware &amp; prototype</span><span>02 / Experimental setup</span><span>03 / Demonstration stills</span></div></div>
+        {% endif %}
+        <p class="pf-media-source">{{ project.media_note }}</p>
+      </section>
+      {% if project.video.youtube_id == empty or project.video.youtube_id == nil %}{% if project.video.mp4 == empty or project.video.mp4 == nil %}{% unless project.flagship %}
+      <p class="pf-video-subtle">A demonstration video can be added when footage is available.</p>
+      {% endunless %}{% endif %}{% endif %}
+      <div class="pf-case-next"><a href="{{ '/projects/' | relative_url }}"><svg class="pf-icon"><use href="#i-arrow"/></svg> Explore other projects</a></div>
+    </article>
+    <aside class="pf-case-sidebar" aria-label="Project details and links">
+      <div class="pf-case-aside-panel">
+        <p class="pf-section-eyebrow">Project information</p>
+        <dl>
+          <dt>Research area</dt><dd>{{ project.label }}</dd>
+          <dt>Stage</dt><dd>{{ project.work_stage }}</dd>
+          <dt>Published work / presentation</dt><dd>{{ project.venue }}</dd>
+        </dl>
+        <div class="pf-case-tags">{% for tag in project.tags %}<span>{{ tag }}</span>{% endfor %}</div>
+        <div class="pf-case-aside-actions">
+          <a class="pf-button pf-button--primary" href="{{ project.paper | relative_url }}" {% unless project.id == 'haptic-systems' %}target="_blank" rel="noopener noreferrer"{% endunless %}>
+            {{ project.paper_label }} <svg class="pf-icon"><use href="#i-external"/></svg>
+          </a>
+          {% for link in project.additional_links %}
+          <a class="pf-case-support-link" href="{{ link.url | relative_url }}">{{ link.label }} <svg class="pf-icon"><use href="#i-arrow"/></svg></a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="pf-case-aside-panel pf-case-related">
+        <p class="pf-section-eyebrow">Associated work</p>
+        <p>{{ project.related_work }}</p>
+        <a class="pf-more" href="{{ '/publications/' | relative_url }}">Browse publications <svg class="pf-icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </aside>
+  </div>
+  <dialog class="pf-gallery-dialog" id="pf-gallery-dialog" aria-label="Expanded research figure">
+    <div class="pf-gallery-dialog-inner">
+      <button class="pf-gallery-dialog-close" type="button" aria-label="Close image viewer">×</button>
+      <img id="pf-gallery-dialog-image" alt="">
+      <div class="pf-gallery-dialog-bottom"><p id="pf-gallery-dialog-caption"></p><div class="pf-gallery-dialog-actions"><button type="button" data-gallery-prev aria-label="Previous figure">←</button><button type="button" data-gallery-next aria-label="Next figure">→</button></div></div>
+    </div>
+  </dialog>
+</main>

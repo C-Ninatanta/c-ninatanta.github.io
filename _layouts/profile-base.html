@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#A60F2D">
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <title>{% if page.title and page.url != '/' %}{{ page.title | escape }} · {% endif %}Chris Ninatanta — Robotics Researcher</title>
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/profile/site.css' | relative_url }}">
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('cn-color-theme'); } catch (e) {}
+      if (theme !== 'dark' && theme !== 'light') {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="pf-icons" aria-hidden="true" focusable="false">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v7l-6 9a1.5 1.5 0 0 0 1.3 2h13.4a1.5 1.5 0 0 0 1.3-2l-6-9V3M7.4 15h9.2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M7 3h11a2 2 0 0 1 2 2v16H7a3 3 0 0 1 0-6h13M7 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3M8 8h8M8 12h6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 2h7l5 5v14a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM14 2v6h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5m-4 0h8"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15.6A8.5 8.5 0 0 1 8.4 4 8.5 8.5 0 1 0 20 15.6z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M13 5h6v6M19 5l-9 9M19 14v5H5V5h5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-robot" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2"/><circle cx="15" cy="14" r="2"/><path d="M7 7v4h6l2 1M15 16v5M10 21h10M3 21h6l2-10"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C10 4 4 7 4 15a5 5 0 0 0 5 5c8 0 11-6 11-16ZM4 20c3-5 7-8 12-11"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M5 15V9a2 2 0 0 1 4 0v4-7a2 2 0 0 1 4 0v7-5a2 2 0 0 1 4 0v5-2a2 2 0 0 1 4 0v5c0 3-3 5-6 5h-4c-3 0-6-2-6-6Z"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="9" cy="18" r="2" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-graduate" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5zM6 12v5c3 3 9 3 12 0v-5M22 9v7"/></symbol>
+  </svg>
+  <a class="pf-skip" href="#main-content">Skip to main content</a>
+  <header class="pf-mobile-bar">
+    <a class="pf-mobile-brand" href="{{ '/' | relative_url }}">Chris Ninatanta</a>
+    <div class="pf-mobile-actions">
+      <button class="pf-theme-toggle pf-theme-toggle--mobile" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch color theme"><svg class="pf-icon pf-sun"><use href="#i-sun"/></svg><svg class="pf-icon pf-moon"><use href="#i-moon"/></svg></button>
+      <button class="pf-menu-toggle" id="pf-menu-toggle" type="button" aria-label="Open navigation" aria-controls="pf-sidebar" aria-expanded="false"><svg class="pf-icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </header>
+  <div class="pf-backdrop" id="pf-backdrop" hidden></div>
+  <aside class="pf-sidebar" id="pf-sidebar" aria-label="Main navigation">
+    <div class="pf-brand"><a href="{{ '/' | relative_url }}">Chris Ninatanta</a><span>ROBOTICS RESEARCHER</span></div>
+    <div class="pf-sidebar-rule"></div>
+    <nav class="pf-nav" aria-label="Main">
+      <a href="{{ '/' | relative_url }}" class="{% if page.section == 'home' %}is-active{% endif %}" {% if page.section == 'home' %}aria-current="page"{% endif %}><svg class="pf-icon"><use href="#i-home"/></svg><span>Home</span></a>
+      <a href="{{ '/research/' | relative_url }}" class="{% if page.section == 'research' %}is-active{% endif %}" {% if page.section == 'research' %}aria-current="page"{% endif %}><svg class="pf-icon"><use href="#i-flask"/></svg><span>Research</span></a>
+      <a href="{{ '/publications/' | relative_url }}" class="{% if page.section == 'publications' %}is-active{% endif %}" {% if page.section == 'publications' %}aria-current="page"{% endif %}><svg class="pf-icon"><use href="#i-book"/></svg><span>Publications</span></a>
+      <a href="{{ '/projects/' | relative_url }}" class="{% if page.section == 'projects' %}is-active{% endif %}" {% if page.section == 'projects' %}aria-current="page"{% endif %}><svg class="pf-icon"><use href="#i-grid"/></svg><span>Projects</span></a>
+      <a href="{{ '/cv/' | relative_url }}" class="{% if page.section == 'cv' %}is-active{% endif %}" {% if page.section == 'cv' %}aria-current="page"{% endif %}><svg class="pf-icon"><use href="#i-file"/></svg><span>CV</span></a>
+      <a href="{{ '/talks/' | relative_url }}" class="{% if page.section == 'talks' %}is-active{% endif %}" {% if page.section == 'talks' %}aria-current="page"{% endif %}><svg class="pf-icon"><use href="#i-mic"/></svg><span>Talks</span></a>
+      <a href="{{ '/#contact' | relative_url }}"><svg class="pf-icon"><use href="#i-mail"/></svg><span>Contact</span></a>
+    </nav>
+    <div class="pf-sidebar-bottom">
+      <div class="pf-theme-control"><span>Appearance</span><button type="button" class="pf-theme-toggle" data-theme-toggle aria-label="Switch color theme" title="Switch color theme"><svg class="pf-icon pf-sun"><use href="#i-sun"/></svg><svg class="pf-icon pf-moon"><use href="#i-moon"/></svg><span data-theme-label>Dark mode</span></button></div>
+      <div class="pf-identity"><span class="pf-identity-dot"></span> Washington State University</div>
+      <div class="pf-side-links"><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Scholar</a><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a><a href="{{ site.author.orcid }}" target="_blank" rel="noopener noreferrer">ORCID</a></div>
+    </div>
+  </aside>
+  <div class="pf-main" id="main-content">
+    {{ content }}
+    <footer class="pf-site-footer"><span>© {{ 'now' | date: '%Y' }} Chris Ninatanta</span><span>Robotics research · Washington State University</span><a href="{{ '/#contact' | relative_url }}">Get in touch <svg class="pf-icon"><use href="#i-arrow"/></svg></a></footer>
+  </div>
+  <script src="{{ '/assets/profile/site.js' | relative_url }}" defer></script>
+</body>
+</html>

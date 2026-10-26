@@ -1,0 +1,52 @@
+---
+layout: profile-base
+---
+<main class="pf-home">
+  <section class="pf-home-hero" aria-labelledby="pf-main-title">
+    <div class="pf-hero-grid">
+      <div class="pf-hero-copy">
+        <p class="pf-kicker">Robotics · Soft machines · Human interaction · Real-world impact</p>
+        <h1 id="pf-main-title">Chris Ninatanta</h1>
+        <p class="pf-hero-role">Robotics Researcher</p>
+        <div class="pf-rule" aria-hidden="true"></div>
+        <p class="pf-hero-description">I want to make robots more adaptable, capable, and useful in the world around us. My work connects soft robotic design, manipulation, and human interaction to real problems beyond the lab.</p>
+        <div class="pf-hero-actions">
+          <a class="pf-button pf-button--primary" href="{{ '/research/' | relative_url }}">Explore my research <svg class="pf-icon"><use href="#i-arrow"/></svg></a>
+          <a class="pf-button pf-button--secondary" href="{{ '/files/CV_C_Ninatanta_2025.pdf' | relative_url }}" download><svg class="pf-icon"><use href="#i-download"/></svg> Download CV</a>
+        </div>
+      </div>
+      <div class="pf-hero-image"><img src="{{ '/images/profile.jpg' | relative_url }}" alt="Chris Ninatanta at Mount Rainier in Washington" width="1262" height="1184" fetchpriority="high"><span class="pf-hero-caption">Mount Rainier, Washington</span></div>
+    </div>
+  </section>
+  <section class="pf-feature-strip" aria-label="Research perspective"><div class="pf-container pf-feature-inner">
+    <div class="pf-feature"><svg class="pf-icon"><use href="#i-robot"/></svg><div><h2>Real-world robotics</h2><p>Designing and testing systems beyond controlled settings.</p></div></div>
+    <div class="pf-feature"><svg class="pf-icon"><use href="#i-leaf"/></svg><div><h2>Soft & adaptable robots</h2><p>Compliant machines for delicate, variable tasks.</p></div></div>
+    <div class="pf-feature"><svg class="pf-icon"><use href="#i-sliders"/></svg><div><h2>Modeling & validation</h2><p>Connecting analytical methods to physical behavior.</p></div></div>
+    <div class="pf-feature"><svg class="pf-icon"><use href="#i-hand"/></svg><div><h2>Human-centered systems</h2><p>Exploring haptics, teleoperation, and human insight.</p></div></div>
+  </div></section>
+  <section class="pf-section" id="publications-preview" aria-labelledby="pf-publications-heading"><div class="pf-container">
+    <div class="pf-section-header"><h2 class="pf-section-title" id="pf-publications-heading">Selected Publications</h2><a class="pf-more" href="{{ '/publications/' | relative_url }}">All publications <svg class="pf-icon"><use href="#i-arrow"/></svg></a></div>
+    <div class="pf-card-grid">
+      {% for paper in site.data.featured_publications %}
+      <article class="pf-card">
+        <a class="pf-card-media" href="{{ paper.paper | relative_url }}" aria-label="Read {{ paper.title }}"><img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" loading="lazy"></a>
+        <div class="pf-card-content"><h3><a href="{{ paper.paper | relative_url }}">{{ paper.title }}</a></h3><div class="pf-card-meta">{{ paper.authors }}</div><div class="pf-card-venue">{{ paper.venue }}</div><div class="pf-pills">{% for tag in paper.tags %}<span>{{ tag }}</span>{% endfor %}</div></div>
+      </article>
+      {% endfor %}
+    </div>
+  </div></section>
+  <section class="pf-section pf-section--border pf-projects" id="featured-projects" aria-labelledby="pf-projects-heading"><div class="pf-container">
+    <div class="pf-section-header"><h2 class="pf-section-title" id="pf-projects-heading">Featured Projects</h2><a class="pf-more" href="{{ '/projects/' | relative_url }}">All projects <svg class="pf-icon"><use href="#i-arrow"/></svg></a></div>
+    <div class="pf-card-grid">
+      {% assign featured_ids = 'apple-gripper,haptic-systems,soft-growing' | split: ',' %}
+      {% for id in featured_ids %}{% assign project = site.data.research | where: 'id', id | first %}
+      <article class="pf-card{% if project.flagship %} pf-card--flagship{% endif %}"><a class="pf-card-media" href="{{ '/projects/' | append: project.id | append: '/' | relative_url }}" aria-label="Explore {{ project.title | escape }}">{% if project.image %}<img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}" loading="lazy">{% else %}<div class="pf-project-image-placeholder"><span>Human–robot interaction</span><strong>Haptic feedback</strong><small>Research media in preparation</small></div>{% endif %}</a><div class="pf-card-content">{% if project.flagship %}<span class="pf-flagship-kicker">Featured research</span>{% endif %}<h3><a href="{{ '/projects/' | append: project.id | append: '/' | relative_url }}">{{ project.title }}</a></h3><p>{{ project.summary }}</p><div class="pf-pills">{% for tag in project.tags limit:3 %}<span>{{ tag }}</span>{% endfor %}</div><a class="pf-card-link" href="{{ '/projects/' | append: project.id | append: '/' | relative_url }}">Explore project <svg class="pf-icon"><use href="#i-arrow"/></svg></a></div></article>
+      {% endfor %}
+    </div>
+  </div></section>
+  <section class="pf-container pf-footer-panels" id="contact" aria-label="Background and contact">
+    <div class="pf-footer-panel"><h2>About Me</h2><p>I'm a Mechanical Engineering Ph.D. researcher at Washington State University, working with Prof. Ming Luo in the Mechanically-Intelligent Autonomous Robotics (MIAR) Laboratory.</p><p>My research spans mechanical design, rapid prototyping, soft robotics, manipulation, and experimental evaluation. I care about turning rigorous research into machines that can do useful work.</p><a class="pf-more" href="{{ '/research/' | relative_url }}">More about my research <svg class="pf-icon"><use href="#i-arrow"/></svg></a></div>
+    <div class="pf-footer-panel"><h2>Education & Research</h2><div class="pf-timeline"><div class="pf-timeline-item"><strong>Ph.D. · Mechanical Engineering</strong><span>Washington State University</span><span>In progress · Expected 2029</span></div><div class="pf-timeline-item"><strong>Graduate Research · MIAR Lab</strong><span>Soft robotics and haptic interaction</span></div><div class="pf-timeline-item"><strong>B.S. · Mechanical Engineering</strong><span>Washington State University · 2023</span></div></div></div>
+    <div class="pf-footer-panel"><h2>Let's Collaborate</h2><p>Interested in research collaboration, robotics R&amp;D, or engineering opportunities? I'm always glad to connect with people building practical robotic systems.</p><a class="pf-button pf-button--primary" href="mailto:{{ site.author.email }}"><svg class="pf-icon"><use href="#i-mail"/></svg> Get in touch <svg class="pf-icon"><use href="#i-arrow"/></svg></a><div class="pf-contact-info"><a href="mailto:{{ site.author.email }}"><svg class="pf-icon"><use href="#i-mail"/></svg>{{ site.author.email }}</a><a href="{{ site.author.googlescholar }}">Google Scholar <svg class="pf-icon"><use href="#i-external"/></svg></a></div></div>
+  </section>
+</main>

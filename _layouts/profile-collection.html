@@ -1,0 +1,4 @@
+---
+layout: profile-base
+---
+<main><header class="pf-page-header"><div class="pf-container"><p class="pf-kicker pf-kicker--red">Research / {{ page.collection | capitalize }}</p><h1>{{ page.title }}</h1><p>{{ page.venue }}{% if page.date %} · {{ page.date | date: '%Y' }}{% endif %}</p></div></header><div class="pf-container pf-page-content"><article class="pf-article">{% if page.excerpt %}<p>{{ page.excerpt }}</p>{% endif %}{{ content }}{% if page.paperurl %}<p><a class="pf-button pf-button--primary" style="color:white;text-decoration:none" href="{{ page.paperurl }}">Read paper ↗</a></p>{% endif %}{% if page.citation %}<h2>Citation</h2><p>{{ page.citation }}</p>{% endif %}</article><p><a class="pf-more" href="{{ '/publications/' | relative_url }}">← Publications</a></p></div></main>

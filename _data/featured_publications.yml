@@ -1,0 +1,24 @@
+- title: Design and Evaluation of a Lightweight Soft Electrical Apple Harvesting Gripper
+  authors: C. Ninatanta et al.
+  venue: IEEE RoboSoft 2024
+  year: '2024'
+  image: /images/research/apple-gripper.jpg
+  image_alt: Soft robotic apple harvesting gripper from the published paper
+  paper: /files/Design_of_a_Lightweight_Soft_Electrical_Apple_Harvesting_Gripper.pdf
+  tags: [Soft robotics, Apple harvesting]
+- title: Modeling and Experimental Verification of a Continuous Curvature-Based Soft Growing Manipulator
+  authors: J. Allen, R. Dorosh, C. Ninatanta et al.
+  venue: IEEE Robotics and Automation Letters 2024
+  year: '2024'
+  image: /images/research/continuum-manipulator.jpg
+  image_alt: Continuum manipulator prototype from the published work
+  paper: /files/Modeling_and_Control_of_a_Continuous_Curvature_based_Soft_Growing_Manipulator.pdf
+  tags: [Soft manipulators, Modeling]
+- title: Design, Modeling, and Control of a Low-Cost and Rapid Response Soft-Growing Manipulator for Orchard Operations
+  authors: R. Dorosh, J. Allen, C. Ninatanta et al.
+  venue: IEEE/RSJ IROS 2023
+  year: '2023'
+  image: /images/research/soft-growing-manipulator.jpg
+  image_alt: Orchard soft-growing manipulator from the published research
+  paper: /files/Design%2C%20Modeling%2C%20and%20Control%20of%20a%20Low-Cost%20and%20Rapid%20Response%20Soft-Growing%20Manipulator%20for%20Orchard%20Operations.pdf
+  tags: [Agricultural robotics, Control]

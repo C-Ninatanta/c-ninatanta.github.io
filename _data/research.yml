@@ -1,0 +1,322 @@
+  - id: apple-gripper
+    number: '01'
+    label: Soft robotic manipulation
+    title: Lightweight soft electrical apple-harvesting gripper
+    summary: Designed and experimentally evaluated a lightweight electrically actuated gripper intended for 
+      robotic apple harvesting.
+    detail: A soft, electrically actuated end effector developed to handle apples in orchard environments. The
+      published study reports physical prototyping and experimental evaluation, including harvesting trials.
+    contributions:
+      - Developed the soft gripper concept and physical prototype
+      - Carried out harvesting experiments and evaluated success and hardware mass
+    highlight: 87.5% harvesting success
+    secondary: 0.306 kg gripper mass
+    image: /images/research/apple-gripper.jpg
+    image_alt: Soft electrical gripper grasping an apple in the orchard, from the RoboSoft 2024 paper
+    venue: RoboSoft 2024
+    paper: /files/Design_of_a_Lightweight_Soft_Electrical_Apple_Harvesting_Gripper.pdf
+    paper_label: Read publication
+    tags:
+      - Soft robotics
+      - Mechanical design
+      - Experimental validation
+    challenge: An apple-harvesting end effector must grip and detach fruit reliably without bruising it. The 
+      research also imposed a strict mass constraint so that the gripper could eventually be carried by a 
+      lightweight soft-growing manipulator.
+    approach:
+      - Three cable-driven fingers combined a compliant silicone surface with an embedded, 3D-printed TPU 
+        skeleton.
+      - Alternative TPU reinforcement patterns were compared to balance finger force, bending range, and a 
+        gentle contact surface.
+      - An electrically driven pulley closed the fingers; a palm-mounted limit switch enabled 
+        contact-triggered actuation. The cable attachment was designed for field serviceability.
+    validation:
+      - Bench tests measured individual finger force output and bending angle across different TPU 
+        reinforcement patterns.
+      - Harvesting trials were conducted in a commercial orchard in Prosser, Washington during the 2023 
+        growing season.
+      - The published study reports picking success and fruit condition under those field-test conditions.
+    results:
+      - value: 87.5%
+        label: Successful picks
+        detail: Published orchard evaluation
+      - value: 0.306 kg
+        label: Prototype gripper mass
+        detail: Reported assembled hardware mass
+    impact: This work investigates how compliant, low-mass end effectors can help orchard robots manipulate 
+      delicate produce without relying on a conventional heavy gripper.
+    source_note: Numbers refer to the experimental prototype and conditions reported in the RoboSoft 2024 
+      paper; they are not guarantees for other orchards or fruit varieties.
+    related_work: Design and Evaluation of a Lightweight Soft Electrical Apple Harvesting Gripper
+    work_stage: Published · 2024
+    media_note: Images are adapted from the linked coauthored research paper; publication figures are credited
+      to the original author team.
+    role_note: The individual-contribution summary reflects an earlier portfolio draft and should be confirmed
+      before publication.
+    gallery:
+      - src: /images/projects/apple-gripper/01-prototype.jpg
+        alt: Soft electrical gripper prototype showing the three compliant fingers and actuation hardware.
+        label: Prototype construction
+        caption: Soft electrical gripper prototype showing the three compliant fingers and actuation hardware.
+        category: prototype
+      - src: /images/projects/apple-gripper/02-bench-testing.jpg
+        alt: Bench setup with load cell and microcontroller used for gripper testing.
+        label: Bench validation
+        caption: Bench setup with load cell and microcontroller used for gripper testing.
+        category: experiment
+      - src: /images/projects/apple-gripper/03-orchard-trials.jpg
+        alt: Photographs and evaluation examples from orchard harvesting trials.
+        label: Orchard trials
+        caption: Photographs and evaluation examples from orchard harvesting trials.
+        category: fieldwork
+      - src: /images/projects/apple-gripper/04-picking-results.jpg
+        alt: Picking success rates for the tested TPU reinforcement patterns, as reported in the paper.
+        label: Published results
+        caption: Picking success rates for the tested TPU reinforcement patterns, as reported in the paper.
+        category: results
+    video:
+      youtube_id: ''
+      mp4: ''
+      poster: ''
+      title: Apple gripper — 30–90 second highlight
+      target_duration: 30–90 seconds
+      focus: Physical mechanism
+      format: Silent highlight with on-screen labels
+      description: >-
+        A concise, captioned look at the three compliant fingers, cable-driven closing motion,
+        contact with an apple, and the gripper reopening.
+      planned_labels:
+        - Three compliant fingers
+        - Cable-driven closing
+        - Apple contact
+        - Opening and reset
+    flagship: true
+  - id: haptic-systems
+    number: '02'
+    label: Human–robot interaction
+    title: Human teleoperation and haptic feedback
+    summary: Research exploring human-operated robotic systems and wearable haptic feedback for orchard 
+      robotics.
+    detail: Research presentations have focused on human-teleoperated orchard robotic systems with haptic 
+      feedback, and how users respond to haptic devices. Project media and expanded technical details can be 
+      added as the research develops.
+    contributions:
+      - Exploring human teleoperation of orchard robotic systems with wearable haptic feedback
+      - Investigating human interaction with haptic feedback devices
+    highlight: Research presentations · 2025
+    secondary: Device imagery and quantitative results to be added after review
+    graphic: haptic
+    venue: Research presentations, 2025
+    paper: /talks/2025-05-03-NRT-Symposium
+    paper_label: View research presentation
+    tags:
+      - Haptic feedback
+      - Teleoperation
+      - Human–robot interaction
+    challenge: Teleoperated orchard robots rely on human input. Wearable haptic feedback is being investigated
+      as a way to communicate information back to operators during remote interaction.
+    approach:
+      - Exploring the connection between human teleoperation, robot feedback, and wearable devices.
+      - Presenting the research direction through the NSF-NRT LEAD Research Symposium, including work on human
+        responses to haptic devices.
+      - Documenting device design, experimental methods, and participant observations as research materials 
+        become available.
+    validation:
+      - Research was presented in oral and poster formats at the NSF-NRT LEAD Research Symposium in 2025.
+      - Prototype images, study design details, evaluation protocol, and quantitative outcomes are not yet 
+        included in the uploaded repository.
+    results: []
+    impact: Human-in-the-loop robotic systems provide another path toward practical, usable robotics, 
+      particularly when full autonomy is difficult or human judgment remains valuable.
+    source_note: This page describes a research direction, not a completed or quantified experimental result. 
+      Add verified findings when available.
+    related_work: Enhancing Orchard Robotics Through Human-Teleoperated Systems with Haptic Feedback
+    work_stage: Research presentations · 2025
+    media_note: Photos and video of the actual wearable haptic prototype will be added after the media is 
+      provided.
+    role_note: Please confirm the design, programming, fabrication, and evaluation tasks personally performed 
+      before publication.
+    additional_links:
+      - label: 2025 oral presentation
+        url: /talks/2025-05-03-NRT-Symposium
+      - label: 2025 haptic-device poster
+        url: /talks/2025-05-03-NRT_symposium_poster_talk
+    video:
+      youtube_id: ''
+      mp4: ''
+      poster: ''
+      title: Wearable haptic feedback — 30–90 second highlight
+      target_duration: 30–90 seconds
+      focus: Wearable hardware
+      format: Silent highlight with on-screen labels
+      description: >-
+        A close-up, captioned look at the actual wearable device, how it is worn,
+        and its visible operation during a real test.
+      planned_labels:
+        - Device overview
+        - How it is worn
+        - Feedback components
+        - Worn during testing
+    gallery: []
+    flagship: true
+  - id: soft-growing
+    number: '03'
+    label: Orchard automation
+    title: Soft-growing manipulator for orchard operations
+    summary: Contributed to the design, modeling, and experimental work on a rapidly extending soft robotic 
+      manipulator for tree-fruit applications.
+    detail: A low-cost soft-growing robotic arm for agricultural work, studied as a flexible alternative to 
+      traditional rigid manipulators in orchard environments.
+    contributions:
+      - Contributed to a soft-growing manipulator for orchard applications
+      - Supported design, modeling, and experimental evaluation of the mechanism
+    highlight: Up to 1.2 m extension
+    secondary: Maximum extension speed of 0.27 m/s; payload up to 1.4 kg
+    image: /images/research/soft-growing-manipulator.jpg
+    image_alt: Orchard soft-growing manipulator concept with mobile platform, from the IROS 2023 paper
+    venue: IROS 2023
+    paper: 
+      /files/Design%2C%20Modeling%2C%20and%20Control%20of%20a%20Low-Cost%20and%20Rapid%20Response%20Soft-Growing%20Manipulator%20for%20Orchard%20Operations.pdf
+    paper_label: Read publication
+    tags:
+      - Agricultural robotics
+      - Manipulator design
+      - Robot modeling
+    challenge: Robotic orchard systems need useful reach and payload capacity, but conventional rigid arms can
+      be costly or cumbersome for time-sensitive tree-fruit operations.
+    approach:
+      - The team developed a soft-growing fabric manipulator with pressurized extension and a motorized 
+        steering mechanism.
+      - Linear extension and steering were decoupled to simplify the arm motion and position-control strategy.
+      - A kinematic relationship between steering motor positions and the arm pose was developed and 
+        experimentally evaluated.
+    validation:
+      - Extension capability, maximum speed, and terminal payload were characterized on the prototype.
+      - Motion-capture measurements supported model verification and comparisons of predicted versus measured 
+        end-effector positions.
+      - Control experiments examined position tracking with and without the model-based feedforward terms.
+    results:
+      - value: 1.2 m
+        label: Maximum linear extension
+        detail: Prototype arm reach
+      - value: 0.27 m/s
+        label: Maximum extension speed
+        detail: Reported in IROS 2023 paper
+      - value: 1.4 kg
+        label: Reported payload capacity
+        detail: Experimental platform capability
+    impact: A lightweight growing-arm architecture offers an alternative design direction for agricultural 
+      manipulation where cost, reach, and controllability matter.
+    source_note: System-level performance figures are reported for the team’s prototype in the IROS 2023 
+      publication.
+    related_work: Design, Modeling, and Control of a Low-Cost and Rapid Response Soft-Growing Manipulator for 
+      Orchard Operations
+    work_stage: Published · 2023
+    media_note: Images are adapted from the linked coauthored research paper; publication figures are credited
+      to the original author team.
+    role_note: This was collaborative, coauthored research. Please verify the precise personal design, 
+      modeling, and experimental responsibilities before publication.
+    gallery:
+      - src: /images/projects/soft-growing/01-system-design.jpg
+        alt: Annotated physical system design from the orchard manipulator paper.
+        label: System architecture
+        caption: Annotated physical system design from the orchard manipulator paper.
+        category: design
+      - src: /images/projects/soft-growing/02-prototype-testing.jpg
+        alt: Photographs of the arm extending in the experimental setup.
+        label: Prototype experiments
+        caption: Photographs of the arm extending in the experimental setup.
+        category: experiment
+      - src: /images/projects/soft-growing/03-kinematic-validation.jpg
+        alt: Experimental and predicted position curves used to validate the model.
+        label: Model validation
+        caption: Experimental and predicted position curves used to validate the model.
+        category: results
+      - src: /images/projects/soft-growing/04-control-response.jpg
+        alt: Tracking response comparisons from the published control experiments.
+        label: Control experiments
+        caption: Tracking response comparisons from the published control experiments.
+        category: results
+    video:
+      youtube_id: ''
+      mp4: ''
+      poster: ''
+      title: Project demonstration
+    flagship: false
+  - id: continuum-modeling
+    number: '04'
+    label: Modeling and control
+    title: Modeling of continuous-curvature soft manipulators
+    summary: Contributed to experimental verification of a continuous-curvature model and inverse kinematics 
+      for a soft-growing manipulator.
+    detail: The published Robotics and Automation Letters study investigates the modeling and experimental 
+      verification of a soft-growing robot, including validation of an inverse-kinematic approach.
+    contributions:
+      - Contributed to experimental verification of a continuous-curvature model
+      - Supported evaluation of inverse-kinematics accuracy across target positions
+    highlight: 5.01% average normalized model error
+    secondary: Inverse-kinematics errors of 2.91%, 7.91%, and 2.14% in three reported trials
+    image: /images/research/continuum-manipulator.jpg
+    image_alt: Labeled soft-growing manipulator prototype, from the IEEE Robotics and Automation Letters paper
+    venue: IEEE RA-L 2024
+    paper: /files/Modeling_and_Control_of_a_Continuous_Curvature_based_Soft_Growing_Manipulator.pdf
+    paper_label: Read publication
+    tags:
+      - Robot kinematics
+      - Soft robotics
+      - Model validation
+    challenge: A soft-growing robot bends continuously rather than moving through rigid joints. Accurate 
+      modeling is needed to predict its shape and position under steering inputs.
+    approach:
+      - The team evaluated a continuous-curvature analytical model using a custom soft-growing manipulator.
+      - Model predictions were compared with experimentally measured tip trajectories at several robot 
+        lengths.
+      - An inverse-kinematics method mapped target positions to arm length and steering-cable commands for 
+        experimental verification.
+    validation:
+      - Forward-model accuracy was assessed at nominal arm lengths of 0.5 m, 0.8 m, 1.0 m, and 1.2 m.
+      - Inverse kinematics was tested at three target positions, comparing actual and requested tip location.
+      - The published results focus on static planar verification, not a completed 3D closed-loop controller.
+    results:
+      - value: 5.01%
+        label: Average normalized model error
+        detail: Across four tested arm lengths
+      - value: 2.91–7.91%
+        label: IK position-error range
+        detail: Three target-position trials
+      - value: 4 lengths
+        label: Model verification conditions
+        detail: 0.5, 0.8, 1.0 and 1.2 m
+    impact: Experimentally supported kinematics can help make compliant manipulators more predictable and lays
+      groundwork for model-based position control.
+    source_note: Results and experiment scope come from the 2024 IEEE Robotics and Automation Letters paper. 
+      These are reported team outcomes, not independent performance claims.
+    related_work: Modeling and Experimental Verification of a Continuous Curvature-based Soft Growing 
+      Manipulator
+    work_stage: Published · 2024
+    media_note: Images are adapted from the linked coauthored research paper; publication figures are credited
+      to the original author team.
+    role_note: This was collaborative, coauthored research. Please verify the personal role wording before 
+      publication.
+    gallery:
+      - src: /images/projects/continuum-modeling/01-hardware.jpg
+        alt: Labeled soft-growing manipulator prototype and steering components.
+        label: Manipulator hardware
+        caption: Labeled soft-growing manipulator prototype and steering components.
+        category: prototype
+      - src: /images/projects/continuum-modeling/02-model-comparison.jpg
+        alt: Continuum manipulator model and comparison plots from experimental verification.
+        label: Model verification
+        caption: Continuum manipulator model and comparison plots from experimental verification.
+        category: results
+      - src: /images/projects/continuum-modeling/03-bending-shapes.jpg
+        alt: Photographs of different steering and bending configurations.
+        label: Robot configurations
+        caption: Photographs of different steering and bending configurations.
+        category: experiment
+    video:
+      youtube_id: ''
+      mp4: ''
+      poster: ''
+      title: Project demonstration
+    flagship: false

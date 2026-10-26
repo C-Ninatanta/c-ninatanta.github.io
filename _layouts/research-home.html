@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<main id="main" class="cn-site cn-home">
+  <section class="cn-hero" aria-labelledby="hero-heading">
+    <div class="cn-shell cn-hero__grid">
+      <div class="cn-hero__copy">
+        <div class="cn-eyebrow"><span class="cn-eyebrow__dot"></span> Ph.D. researcher · Washington State University</div>
+        <p class="cn-overline">Chris Ninatanta / Mechanical Engineering</p>
+        <h1 id="hero-heading">Engineering adaptable robots for <em>real-world interaction.</em></h1>
+        <p class="cn-hero__lead">I research soft robotic manipulation, orchard automation, and human–robot interaction—turning ideas into systems that can be built, tested, and used.</p>
+        <div class="cn-actions">
+          <a class="cn-button cn-button--primary" href="{{ '/research/' | relative_url }}">Explore my research <span aria-hidden="true">↗</span></a>
+          <a class="cn-button cn-button--outline" href="{{ '/files/CV_C_Ninatanta_2025.pdf' | relative_url }}">Download CV <span class="cn-button__minor">(2025)</span></a>
+        </div>
+        <div class="cn-hero__links" aria-label="Research profiles">
+          <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="{{ site.author.orcid }}" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="cn-hero__visual">
+        <div class="cn-visual__orbit" aria-hidden="true"></div>
+        <figure class="cn-visual__primary">
+          <img src="{{ '/images/research/apple-gripper.jpg' | relative_url }}" alt="Research prototype of a soft robotic gripper grasping an apple" width="1280" height="653" fetchpriority="high">
+          <figcaption><span class="cn-visual__signal"></span> Soft robotic harvesting / RoboSoft 2024</figcaption>
+        </figure>
+        <div class="cn-visual__note"><span>FROM DESIGN</span><strong>TO REAL-WORLD TESTING</strong></div>
+        <figure class="cn-visual__secondary"><img src="{{ '/images/research/soft-growing-manipulator.jpg' | relative_url }}" alt="Soft-growing orchard manipulator concept" width="1144" height="1117"><figcaption>Orchard robotics · IROS 2023</figcaption></figure>
+        <div class="cn-visual__index" aria-hidden="true">01 / RESEARCH IN MOTION</div>
+      </div>
+    </div>
+    <div class="cn-shell cn-hero__stats" aria-label="Research highlights">
+      <div><strong>87.5<span>%</span></strong><span>Harvesting success in published gripper evaluation</span></div>
+      <div><strong>0.306<span> kg</span></strong><span>Published soft-gripper mass</span></div>
+      <div><strong>1.2<span> m</span></strong><span>Extension capability in soft-growing robot study</span></div>
+    </div>
+  </section>
+
+  <section class="cn-section cn-intro" id="about" aria-labelledby="about-heading">
+    <div class="cn-shell cn-intro__grid">
+      <div>
+        <p class="cn-kicker">01 / The researcher</p>
+        <h2 id="about-heading" class="cn-section__headline">Researching the space between <em>robot design</em> and meaningful interaction.</h2>
+        <div class="cn-researcher-chip"><img src="{{ '/images/profile.jpg' | relative_url }}" alt="Chris Ninatanta outdoors" width="76" height="76" loading="lazy"><span><strong>Chris Ninatanta</strong><small>Washington State University · MIAR Laboratory</small></span></div>
+      </div>
+      <div class="cn-intro__content">
+        <p>I'm a mechanical engineering Ph.D. student at <a href="https://wsu.edu" target="_blank" rel="noopener noreferrer">Washington State University</a>, advised by <a href="https://mme.wsu.edu/mme-personnel/wsu-profile/ming.luo/" target="_blank" rel="noopener noreferrer">Prof. Ming Luo</a> in the <a href="https://labs.wsu.edu/miar/" target="_blank" rel="noopener noreferrer">Mechanically-Intelligent Autonomous Robotics (MIAR) Laboratory</a>.</p>
+        <p>My work combines mechanical design, prototypes, robot modeling, and experimental validation. I'm especially interested in robots that operate in unstructured environments and connect human insight with robotic capability.</p>
+        <div class="cn-pill-list" aria-label="Research interests"><span>Soft robotics</span><span>Agricultural robotics</span><span>Robotic manipulation</span><span>Haptic feedback</span><span>Human–robot interaction</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cn-section cn-work" id="featured-work" aria-labelledby="work-heading">
+    <div class="cn-shell">
+      <div class="cn-heading-row"><div><p class="cn-kicker">02 / Selected work</p><h2 id="work-heading" class="cn-section__headline">Built to be <em>tested.</em></h2><p class="cn-muted">A selection of projects spanning hands-on hardware development, modeling, and human-centered robotics.</p></div><a class="cn-text-link" href="{{ '/research/' | relative_url }}">See all research <span aria-hidden="true">↗</span></a></div>
+      <div class="cn-project-grid">
+        {% for project in site.data.research limit:3 %}
+          <article class="cn-project-card">
+            <a class="cn-project-card__cover" href="{{ '/research/' | relative_url }}#{{ project.id }}" aria-label="Read more about {{ project.title }}">
+              {% if project.image %}<img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}" loading="lazy">
+              {% else %}<div class="cn-haptic-art" aria-hidden="true"><span class="cn-haptic-art__ring ring-a"></span><span class="cn-haptic-art__ring ring-b"></span><span class="cn-haptic-art__ring ring-c"></span><span class="cn-haptic-art__center">HAPTIC<br>FEEDBACK</span><span class="cn-haptic-art__mark">HUMAN × ROBOT</span></div>{% endif %}
+              <span class="cn-project-card__number">{{ project.number }} / 04</span>
+            </a>
+            <div class="cn-project-card__body">
+              <p class="cn-project-card__label">{{ project.label }}</p>
+              <h3><a href="{{ '/research/' | relative_url }}#{{ project.id }}">{{ project.title }}</a></h3>
+              <p>{{ project.summary }}</p>
+              <div class="cn-project-card__foot"><span>{{ project.venue }}</span><span class="cn-project-card__arrow" aria-hidden="true">↗</span></div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="cn-section cn-publications" aria-labelledby="pub-heading"><div class="cn-shell cn-pubs__grid"><div><p class="cn-kicker">03 / Published research</p><h2 id="pub-heading" class="cn-section__headline">Ideas backed by <em>evidence.</em></h2><p class="cn-muted">Peer-reviewed work on soft robotics, manipulation, and robot modeling.</p><a class="cn-text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a></div><div class="cn-publication-list">
+    <a href="{{ '/files/Design_of_a_Lightweight_Soft_Electrical_Apple_Harvesting_Gripper.pdf' | relative_url }}" class="cn-publication-row"><span class="cn-publication-row__year">2024 · RoboSoft</span><strong>Design and Evaluation of a Lightweight Soft Electrical Apple Harvesting Gripper</strong><span class="cn-publication-row__arrow" aria-hidden="true">↗</span></a>
+    <a href="{{ '/files/Modeling_and_Control_of_a_Continuous_Curvature_based_Soft_Growing_Manipulator.pdf' | relative_url }}" class="cn-publication-row"><span class="cn-publication-row__year">2024 · IEEE RA-L</span><strong>Modeling and Experimental Verification of a Continuous Curvature-Based Soft Growing Manipulator</strong><span class="cn-publication-row__arrow" aria-hidden="true">↗</span></a>
+    <a href="{{ '/files/Design%2C%20Modeling%2C%20and%20Control%20of%20a%20Low-Cost%20and%20Rapid%20Response%20Soft-Growing%20Manipulator%20for%20Orchard%20Operations.pdf' | relative_url }}" class="cn-publication-row"><span class="cn-publication-row__year">2023 · IROS</span><strong>Design, Modeling, and Control of a Low-Cost and Rapid Response Soft-Growing Manipulator for Orchard Operations</strong><span class="cn-publication-row__arrow" aria-hidden="true">↗</span></a>
+  </div></div></section>
+
+  <section class="cn-contact" id="contact" aria-labelledby="contact-heading"><div class="cn-shell cn-contact__inner"><div><p class="cn-kicker">04 / Get in touch</p><h2 id="contact-heading">Let's build what comes <em>next.</em></h2><p>Interested in research collaboration, robotics engineering, or applied R&amp;D? I'd be glad to connect.</p></div><a class="cn-button cn-button--light" href="mailto:{{ site.author.email }}">Contact me <span aria-hidden="true">↗</span></a></div></section>
+</main>

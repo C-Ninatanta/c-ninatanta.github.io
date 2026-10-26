@@ -1,0 +1,15 @@
+---
+layout: profile-page
+title: Projects
+section: projects
+permalink: /projects/
+description: "A closer look at robotic systems I've helped design, build, model, and experimentally evaluate. Each project links to the supporting publication or presentation."
+---
+<div class="pf-research-list">
+{% for project in site.data.research %}
+  <article class="pf-research-row" id="{{ project.id }}">
+    <a class="pf-research-row-image" href="{{ '/projects/' | append: project.id | append: '/' | relative_url }}" aria-label="Explore {{ project.title }}">{% if project.image %}<img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}" loading="lazy">{% else %}<div class="pf-project-image-placeholder pf-project-image-placeholder--large"><span>Human–robot interaction</span><strong>Haptic feedback</strong><small>Research media in preparation</small></div>{% endif %}</a>
+    <div class="pf-research-row-copy"><span class="pf-kicker pf-kicker--red">{{ project.number }} / {{ project.label }}</span>{% if project.flagship %}<span class="pf-flagship-kicker">Flagship project</span>{% endif %}<h2><a href="{{ '/projects/' | append: project.id | append: '/' | relative_url }}">{{ project.title }}</a></h2><p>{{ project.summary }}</p><div class="pf-metric"><strong>{{ project.highlight }}</strong><span>{{ project.secondary }}</span></div><a class="pf-more" href="{{ '/projects/' | append: project.id | append: '/' | relative_url }}">View project details <svg class="pf-icon"><use href="#i-arrow"/></svg></a></div>
+  </article>
+{% endfor %}
+</div>

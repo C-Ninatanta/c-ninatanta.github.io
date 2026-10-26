@@ -1,36 +1,20 @@
 ---
-layout: archive
-title: "Publications"
+layout: profile-page
+title: Publications
+section: publications
 permalink: /publications/
-author_profile: true
+description: "Peer-reviewed papers and research abstracts on soft robotic grippers, growing manipulators, and robot modeling, with links to PDFs and citation details."
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<p class="pf-notice">Browse full papers below, or see <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer" style="color:var(--crimson)">Google Scholar ↗</a> for my publication profile.</p>
+<div class="pf-paper-list">
+{% assign pubs_sorted = site.publications | sort: 'date' | reverse %}
+{% for paper in pubs_sorted %}
+  {% assign photo = '/images/research/apple-gripper.jpg' %}
+  {% if paper.title contains 'Continuous Curvature' %}{% assign photo = '/images/research/continuum-manipulator.jpg' %}
+  {% elsif paper.title contains 'Soft-Growing Manipulator for Orchard' %}{% assign photo = '/images/research/soft-growing-manipulator.jpg' %}{% endif %}
+  <article class="pf-paper">
+    <a href="{{ paper.paperurl }}"><img src="{{ photo | relative_url }}" alt="Representative published research figure" loading="lazy"></a>
+    <div><span class="pf-kicker pf-kicker--red">{{ paper.venue }} / {{ paper.date | date: '%Y' }}</span><h2>{{ paper.title }}</h2><p>{{ paper.citation | strip_html }}</p><p>{{ paper.excerpt }}</p><div class="pf-paper-actions"><a href="{{ paper.paperurl }}">Read paper ↗</a>{% if paper.bibtexurl %}<a href="{{ paper.bibtexurl }}">BibTeX ↗</a>{% endif %}{% if paper.slidesurl %}<a href="{{ paper.slidesurl }}">Presentation ↗</a>{% endif %}</div></div>
+  </article>
+{% endfor %}
+</div>
